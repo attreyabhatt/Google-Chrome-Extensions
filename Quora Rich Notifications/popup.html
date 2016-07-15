@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Options</title>
+	<script src="popup.js"></script> 
+	
+  <body style="width:500px;height:250px;">
+  
+  <form method="post">
+	  <h4> Select in which way you want the notifications to be displayed </h4>
+	  <input type="radio" name="method" value="fcfs" checked> FCFS<br>
+	  <input type="radio" name="method" value="priority"> Priority<br>
+  
+    <h4> If you have selected Priority based notification display choose the priority order </h4>
+	<input type="radio" name="order" value="up">1 - Upvotes 2- Comments<br>
+	<input type="radio" name="order" value="comment">1 - Comments 2 - Upvotes<br><br><br>
+
+	<input type="button" name="submit" value="Submit" id="button"/>
+  </form>
+  
+  <script src="jquery.js"></script> 
+  </body>
+</html>
+

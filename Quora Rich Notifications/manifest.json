@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "Quora Notifier",
+  "description": "Live Quora notifications from Desktop",
+  "version": "2.0",
+  
+	
+	"icons" : {
+	   "64": "icon.png",
+	   "32": "icon.png",
+	   "16": "icon.png",
+	   "128": "icon.png"
+	  },
+	  
+	  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+	},
+	
+   "permissions" : [
+		"notifications",
+		"https://www.quora.com/notifications"
+	],
+	"background" : {
+	   "page" : "background.html"
+	}
+}
