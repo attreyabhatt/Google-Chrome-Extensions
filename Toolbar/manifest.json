@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Toolbar",
+  "description": "This is Toolbar description",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+    "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "css": ["style.css"],
+      "js": ["jquery.js", "myscript.js"]
+    }
+  ],
+	"web_accessible_resources" : [
+	"toolbar.html",
+	"style.css"
+	]
+}
